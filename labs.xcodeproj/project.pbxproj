@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DA23AFE1266FAD3A009689F3 /* AccountForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA23AFE0266FAD3A009689F3 /* AccountForm.swift */; };
+		DA23AFE7266FB594009689F3 /* ActionableCoffeeMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA23AFE6266FB594009689F3 /* ActionableCoffeeMenu.swift */; };
+		DA23AFE9266FB5A2009689F3 /* ActionableCoffeeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA23AFE8266FB5A2009689F3 /* ActionableCoffeeViewModel.swift */; };
 		DAB5E525266F87C100016458 /* labsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB5E524266F87C100016458 /* labsApp.swift */; };
 		DAB5E529266F87C200016458 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAB5E528266F87C200016458 /* Assets.xcassets */; };
 		DAB5E52C266F87C200016458 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAB5E52B266F87C200016458 /* Preview Assets.xcassets */; };
@@ -45,6 +48,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DA23AFE0266FAD3A009689F3 /* AccountForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountForm.swift; sourceTree = "<group>"; };
+		DA23AFE6266FB594009689F3 /* ActionableCoffeeMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionableCoffeeMenu.swift; sourceTree = "<group>"; };
+		DA23AFE8266FB5A2009689F3 /* ActionableCoffeeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionableCoffeeViewModel.swift; sourceTree = "<group>"; };
 		DAB5E521266F87C100016458 /* labs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = labs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAB5E524266F87C100016458 /* labsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = labsApp.swift; sourceTree = "<group>"; };
 		DAB5E528266F87C200016458 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -93,6 +99,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DA23AFDF266FAD33009689F3 /* Account Form */ = {
+			isa = PBXGroup;
+			children = (
+				DA23AFE0266FAD3A009689F3 /* AccountForm.swift */,
+			);
+			path = "Account Form";
+			sourceTree = "<group>";
+		};
+		DA23AFE3266FB529009689F3 /* Lists */ = {
+			isa = PBXGroup;
+			children = (
+				DA23AFE5266FB536009689F3 /* Actionable Coffee Menu */,
+				DAB5E570266F8D2800016458 /* Fancy Coffee Menu */,
+				DAB5E56A266F8B8B00016458 /* Refreshable Coffee Menu */,
+				DAB5E55B266F87E900016458 /* Coffee Menu */,
+			);
+			path = Lists;
+			sourceTree = "<group>";
+		};
+		DA23AFE5266FB536009689F3 /* Actionable Coffee Menu */ = {
+			isa = PBXGroup;
+			children = (
+				DA23AFE6266FB594009689F3 /* ActionableCoffeeMenu.swift */,
+				DA23AFE8266FB5A2009689F3 /* ActionableCoffeeViewModel.swift */,
+			);
+			path = "Actionable Coffee Menu";
+			sourceTree = "<group>";
+		};
 		DAB5E518266F87C100016458 = {
 			isa = PBXGroup;
 			children = (
@@ -155,9 +189,8 @@
 		DAB5E559266F87D800016458 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
-				DAB5E570266F8D2800016458 /* Fancy Coffee Menu */,
-				DAB5E56A266F8B8B00016458 /* Refreshable Coffee Menu */,
-				DAB5E55B266F87E900016458 /* Coffee Menu */,
+				DA23AFE3266FB529009689F3 /* Lists */,
+				DA23AFDF266FAD33009689F3 /* Account Form */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -334,7 +367,10 @@
 				DAB5E561266F87F100016458 /* CoffeeMenuViewModel.swift in Sources */,
 				DAB5E52E266F87C200016458 /* Persistence.swift in Sources */,
 				DAB5E56C266F8BA400016458 /* RefreshableCoffeeMenu.swift in Sources */,
+				DA23AFE7266FB594009689F3 /* ActionableCoffeeMenu.swift in Sources */,
+				DA23AFE9266FB5A2009689F3 /* ActionableCoffeeViewModel.swift in Sources */,
 				DAB5E576266F8E5C00016458 /* FancyCoffeeMenuItemView.swift in Sources */,
+				DA23AFE1266FAD3A009689F3 /* AccountForm.swift in Sources */,
 				DAB5E566266F880700016458 /* CoffeeBoard.swift in Sources */,
 				DAB5E557266F87CB00016458 /* ContentView.swift in Sources */,
 				DAB5E55F266F87F100016458 /* CoffeeMenuItemView.swift in Sources */,
