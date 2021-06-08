@@ -82,8 +82,7 @@ struct AccountForm: View {
                     Image(systemName: "keyboard.chevron.compact.down")
                         .padding()
                 })
-                .background(RoundedRectangle(cornerRadius: 4, style: .circular).foregroundColor(.yellow))
-
+                .background(.yellow, in: RoundedRectangle(cornerRadius: 4, style: .circular))
             }
         }
     }
