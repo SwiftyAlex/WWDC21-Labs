@@ -7,8 +7,16 @@
 
 import SwiftUI
 
-enum AccountFormField: Hashable, CaseIterable {
-    case name, age
+enum AccountFormField: Int, RawRepresentable, Hashable, CaseIterable {
+    case name = 0, age
+    var label: String {
+        switch self {
+        case .name:
+            return "Name"
+        case .age:
+            return "Age"
+        }
+    }
 }
 
 struct AccountForm: View {
@@ -38,12 +46,13 @@ struct AccountForm: View {
             
             Button(action: onTapNext) {
                 Text("Next")
-                    .frame(width: 100)
+                    .frame(maxWidth: .infinity)
                     .font(.headline)
                     .foregroundColor(.white)
-                    .padding()
-                    .background(RoundedRectangle(cornerRadius: 12, style: .continuous).foregroundColor(.yellow))
             }
+            .buttonStyle(.bordered)
+            .controlSize(.large)
+            .tint(.accentColor)
             
             Spacer()
         }
@@ -53,6 +62,30 @@ struct AccountForm: View {
         .alert(alertMessage, isPresented: $showAlert, actions: {
             Button("Ok, got it.", role: .cancel) {}
         })
+        .toolbar {
+            ToolbarItemGroup(placement: .keyboard) {
+                Button(action: { onTapNext() }, label: {
+                    Image(systemName: "chevron.down")
+                })
+                Button(action: { onTapPrevious() }, label: {
+                    Image(systemName: "chevron.up")
+                })
+                Spacer()
+                
+                Text(currentFocus?.label ?? "")
+                    .foregroundColor(.accentColor)
+                    .font(.headline)
+                
+                Spacer()
+                
+                Button(action: { currentFocus = nil }, label: {
+                    Image(systemName: "keyboard.chevron.compact.down")
+                        .padding()
+                })
+                .background(RoundedRectangle(cornerRadius: 4, style: .circular).foregroundColor(.yellow))
+
+            }
+        }
     }
     
     // If we get another field, shift to that, otherwise, clear focus
@@ -66,6 +99,15 @@ struct AccountForm: View {
             self.currentFocus = nil
             performValidation()
             
+        }
+    }
+    
+    func onTapPrevious() {
+        guard let currentFocus = currentFocus,  let currentFieldIndex = AccountFormField.allCases.firstIndex(of: currentFocus) else {
+            return
+        }
+        if AccountFormField.allCases.indices.contains(currentFieldIndex - 1) {
+            self.currentFocus = AccountFormField.allCases[currentFieldIndex - 1]
         }
     }
     
