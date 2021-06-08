@@ -19,12 +19,14 @@ struct CoffeeMenuView: View {
     
     var body: some View {
         List {
-            ForEach(listedCoffees, id: \.self) { coffee in
-                CoffeeMenuItemView(coffee: coffee)
-                    .tag(coffee.name)
+            Section {
+                ForEach(listedCoffees, id: \.self) { coffee in
+                    CoffeeMenuItemView(coffee: coffee)
+                        .tag(coffee.name)
+                }
             }
         }
-        .searchable(text: $viewModel.searchString) {
+        .searchable(text: $viewModel.searchString, placement: .navigationBarDrawer(displayMode: .always)) {
             ForEach(viewModel.searchHints.filter { $0.hasPrefix(viewModel.searchString) } , id: \.self) { suggestion in
                 Text(suggestion).searchCompletion(suggestion)
             }
