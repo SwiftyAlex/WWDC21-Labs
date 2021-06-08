@@ -8,13 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		DAB5E525266F87C100016458 /* labsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB5E524266F87C100016458 /* labsApp.swift */; };
-		DAB5E527266F87C100016458 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB5E526266F87C100016458 /* ContentView.swift */; };
 		DAB5E529266F87C200016458 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAB5E528266F87C200016458 /* Assets.xcassets */; };
 		DAB5E52C266F87C200016458 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAB5E52B266F87C200016458 /* Preview Assets.xcassets */; };
 		DAB5E52E266F87C200016458 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB5E52D266F87C200016458 /* Persistence.swift */; };
 		DAB5E531266F87C200016458 /* labs.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DAB5E52F266F87C200016458 /* labs.xcdatamodeld */; };
 		DAB5E53B266F87C200016458 /* labsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB5E53A266F87C200016458 /* labsTests.swift */; };
 		DAB5E545266F87C200016458 /* labsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB5E544266F87C200016458 /* labsUITests.swift */; };
+		DAB5E557266F87CB00016458 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB5E553266F87CB00016458 /* ContentView.swift */; };
+		DAB5E55F266F87F100016458 /* CoffeeMenuItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB5E55C266F87F100016458 /* CoffeeMenuItemView.swift */; };
+		DAB5E560266F87F100016458 /* CoffeeMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB5E55D266F87F100016458 /* CoffeeMenuView.swift */; };
+		DAB5E561266F87F100016458 /* CoffeeMenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB5E55E266F87F100016458 /* CoffeeMenuViewModel.swift */; };
+		DAB5E565266F880700016458 /* Coffee.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB5E563266F880700016458 /* Coffee.swift */; };
+		DAB5E566266F880700016458 /* CoffeeBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB5E564266F880700016458 /* CoffeeBoard.swift */; };
+		DAB5E56C266F8BA400016458 /* RefreshableCoffeeMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB5E56B266F8BA400016458 /* RefreshableCoffeeMenu.swift */; };
+		DAB5E56E266F8BB500016458 /* RefreshableCoffeeMenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB5E56D266F8BB500016458 /* RefreshableCoffeeMenuViewModel.swift */; };
+		DAB5E572266F8D3500016458 /* FancyCoffeeMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB5E571266F8D3500016458 /* FancyCoffeeMenu.swift */; };
+		DAB5E574266F8D3C00016458 /* FancyCoffeeMenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB5E573266F8D3C00016458 /* FancyCoffeeMenuViewModel.swift */; };
+		DAB5E576266F8E5C00016458 /* FancyCoffeeMenuItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB5E575266F8E5C00016458 /* FancyCoffeeMenuItemView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +47,6 @@
 /* Begin PBXFileReference section */
 		DAB5E521266F87C100016458 /* labs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = labs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAB5E524266F87C100016458 /* labsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = labsApp.swift; sourceTree = "<group>"; };
-		DAB5E526266F87C100016458 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DAB5E528266F87C200016458 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DAB5E52B266F87C200016458 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DAB5E52D266F87C200016458 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
@@ -46,6 +55,17 @@
 		DAB5E53A266F87C200016458 /* labsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = labsTests.swift; sourceTree = "<group>"; };
 		DAB5E540266F87C200016458 /* labsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = labsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAB5E544266F87C200016458 /* labsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = labsUITests.swift; sourceTree = "<group>"; };
+		DAB5E553266F87CB00016458 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContentView.swift; path = ../../wwdc20.labs/wwdc21.labs/ContentView.swift; sourceTree = "<group>"; };
+		DAB5E55C266F87F100016458 /* CoffeeMenuItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoffeeMenuItemView.swift; sourceTree = "<group>"; };
+		DAB5E55D266F87F100016458 /* CoffeeMenuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoffeeMenuView.swift; sourceTree = "<group>"; };
+		DAB5E55E266F87F100016458 /* CoffeeMenuViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoffeeMenuViewModel.swift; sourceTree = "<group>"; };
+		DAB5E563266F880700016458 /* Coffee.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coffee.swift; sourceTree = "<group>"; };
+		DAB5E564266F880700016458 /* CoffeeBoard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoffeeBoard.swift; sourceTree = "<group>"; };
+		DAB5E56B266F8BA400016458 /* RefreshableCoffeeMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshableCoffeeMenu.swift; sourceTree = "<group>"; };
+		DAB5E56D266F8BB500016458 /* RefreshableCoffeeMenuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshableCoffeeMenuViewModel.swift; sourceTree = "<group>"; };
+		DAB5E571266F8D3500016458 /* FancyCoffeeMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FancyCoffeeMenu.swift; sourceTree = "<group>"; };
+		DAB5E573266F8D3C00016458 /* FancyCoffeeMenuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FancyCoffeeMenuViewModel.swift; sourceTree = "<group>"; };
+		DAB5E575266F8E5C00016458 /* FancyCoffeeMenuItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FancyCoffeeMenuItemView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,8 +116,10 @@
 		DAB5E523266F87C100016458 /* labs */ = {
 			isa = PBXGroup;
 			children = (
+				DAB5E55A266F87DC00016458 /* Data */,
+				DAB5E559266F87D800016458 /* Screens */,
+				DAB5E553266F87CB00016458 /* ContentView.swift */,
 				DAB5E524266F87C100016458 /* labsApp.swift */,
-				DAB5E526266F87C100016458 /* ContentView.swift */,
 				DAB5E528266F87C200016458 /* Assets.xcassets */,
 				DAB5E52D266F87C200016458 /* Persistence.swift */,
 				DAB5E52F266F87C200016458 /* labs.xcdatamodeld */,
@@ -128,6 +150,54 @@
 				DAB5E544266F87C200016458 /* labsUITests.swift */,
 			);
 			path = labsUITests;
+			sourceTree = "<group>";
+		};
+		DAB5E559266F87D800016458 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				DAB5E570266F8D2800016458 /* Fancy Coffee Menu */,
+				DAB5E56A266F8B8B00016458 /* Refreshable Coffee Menu */,
+				DAB5E55B266F87E900016458 /* Coffee Menu */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		DAB5E55A266F87DC00016458 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				DAB5E563266F880700016458 /* Coffee.swift */,
+				DAB5E564266F880700016458 /* CoffeeBoard.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		DAB5E55B266F87E900016458 /* Coffee Menu */ = {
+			isa = PBXGroup;
+			children = (
+				DAB5E55C266F87F100016458 /* CoffeeMenuItemView.swift */,
+				DAB5E55D266F87F100016458 /* CoffeeMenuView.swift */,
+				DAB5E55E266F87F100016458 /* CoffeeMenuViewModel.swift */,
+			);
+			path = "Coffee Menu";
+			sourceTree = "<group>";
+		};
+		DAB5E56A266F8B8B00016458 /* Refreshable Coffee Menu */ = {
+			isa = PBXGroup;
+			children = (
+				DAB5E56B266F8BA400016458 /* RefreshableCoffeeMenu.swift */,
+				DAB5E56D266F8BB500016458 /* RefreshableCoffeeMenuViewModel.swift */,
+			);
+			path = "Refreshable Coffee Menu";
+			sourceTree = "<group>";
+		};
+		DAB5E570266F8D2800016458 /* Fancy Coffee Menu */ = {
+			isa = PBXGroup;
+			children = (
+				DAB5E571266F8D3500016458 /* FancyCoffeeMenu.swift */,
+				DAB5E573266F8D3C00016458 /* FancyCoffeeMenuViewModel.swift */,
+				DAB5E575266F8E5C00016458 /* FancyCoffeeMenuItemView.swift */,
+			);
+			path = "Fancy Coffee Menu";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,10 +330,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAB5E574266F8D3C00016458 /* FancyCoffeeMenuViewModel.swift in Sources */,
+				DAB5E561266F87F100016458 /* CoffeeMenuViewModel.swift in Sources */,
 				DAB5E52E266F87C200016458 /* Persistence.swift in Sources */,
-				DAB5E527266F87C100016458 /* ContentView.swift in Sources */,
+				DAB5E56C266F8BA400016458 /* RefreshableCoffeeMenu.swift in Sources */,
+				DAB5E576266F8E5C00016458 /* FancyCoffeeMenuItemView.swift in Sources */,
+				DAB5E566266F880700016458 /* CoffeeBoard.swift in Sources */,
+				DAB5E557266F87CB00016458 /* ContentView.swift in Sources */,
+				DAB5E55F266F87F100016458 /* CoffeeMenuItemView.swift in Sources */,
+				DAB5E572266F8D3500016458 /* FancyCoffeeMenu.swift in Sources */,
 				DAB5E525266F87C100016458 /* labsApp.swift in Sources */,
 				DAB5E531266F87C200016458 /* labs.xcdatamodeld in Sources */,
+				DAB5E560266F87F100016458 /* CoffeeMenuView.swift in Sources */,
+				DAB5E56E266F8BB500016458 /* RefreshableCoffeeMenuViewModel.swift in Sources */,
+				DAB5E565266F880700016458 /* Coffee.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -423,7 +503,6 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"labs/Preview Content\"";
-				DEVELOPMENT_TEAM = VLU7X6Y8EY;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -431,7 +510,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -453,7 +532,6 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"labs/Preview Content\"";
-				DEVELOPMENT_TEAM = VLU7X6Y8EY;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -461,7 +539,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -482,7 +560,6 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = VLU7X6Y8EY;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -507,7 +584,6 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = VLU7X6Y8EY;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -531,7 +607,6 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = VLU7X6Y8EY;
 				GENERATE_INFOPLIST_FILE = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -554,7 +629,6 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = VLU7X6Y8EY;
 				GENERATE_INFOPLIST_FILE = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
