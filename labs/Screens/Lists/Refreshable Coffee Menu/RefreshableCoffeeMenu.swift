@@ -21,7 +21,7 @@ struct RefreshableCoffeeMenu: View {
         .refreshable {
             await viewModel.refreshCoffee(coffeeBoard: coffeeBoard)
         }
-        .onAppear {
+        .task {
             if viewModel.coffees.isEmpty {
                 viewModel.loadData(coffeeBoard: coffeeBoard)
             }

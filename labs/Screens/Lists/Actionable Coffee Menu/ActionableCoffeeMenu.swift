@@ -31,7 +31,7 @@ struct ActionableCoffeeMenu: View {
                 ForEach(viewModel.coffees, id: \.self) { coffee in
                     CoffeeMenuItemView(coffee: coffee)
                         .tag(coffee.name)
-                        .swipeActions {
+                        .swipeActions(edge: .leading) {
                             Button(action: { viewModel.togglePinnedCoffee(coffee) }, label: {
                                 Image(systemName: "pin.fill")
                             })
@@ -40,7 +40,7 @@ struct ActionableCoffeeMenu: View {
                 }
             }
         }
-        .onAppear {
+        .task {
             if viewModel.coffees.isEmpty {
                 viewModel.loadData(coffeeBoard: coffeeBoard)
             }

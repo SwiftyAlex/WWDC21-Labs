@@ -26,7 +26,7 @@ struct FancyCoffeeMenu: View {
             }
             .padding()
         }
-        .onAppear {
+        .task {
             if viewModel.coffees.isEmpty {
                 viewModel.loadData(coffeeBoard: coffeeBoard)
             }

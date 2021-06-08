@@ -29,7 +29,7 @@ struct CoffeeMenuView: View {
                 Text(suggestion).searchCompletion(suggestion)
             }
         }
-        .onAppear {
+        .task {
             if viewModel.coffees.isEmpty {
                 viewModel.loadData(coffeeBoard: coffeeBoard)
             }
