@@ -11,6 +11,7 @@
 		DA23AFE7266FB594009689F3 /* ActionableCoffeeMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA23AFE6266FB594009689F3 /* ActionableCoffeeMenu.swift */; };
 		DA23AFE9266FB5A2009689F3 /* ActionableCoffeeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA23AFE8266FB5A2009689F3 /* ActionableCoffeeViewModel.swift */; };
 		DAA9D5AD2670B08900A6A086 /* MaterialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA9D5AC2670B08900A6A086 /* MaterialView.swift */; };
+		DAA9D5AF2670B60700A6A086 /* ButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA9D5AE2670B60700A6A086 /* ButtonsView.swift */; };
 		DAB5E525266F87C100016458 /* labsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB5E524266F87C100016458 /* labsApp.swift */; };
 		DAB5E529266F87C200016458 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAB5E528266F87C200016458 /* Assets.xcassets */; };
 		DAB5E52C266F87C200016458 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAB5E52B266F87C200016458 /* Preview Assets.xcassets */; };
@@ -53,6 +54,7 @@
 		DA23AFE6266FB594009689F3 /* ActionableCoffeeMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionableCoffeeMenu.swift; sourceTree = "<group>"; };
 		DA23AFE8266FB5A2009689F3 /* ActionableCoffeeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionableCoffeeViewModel.swift; sourceTree = "<group>"; };
 		DAA9D5AC2670B08900A6A086 /* MaterialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialView.swift; sourceTree = "<group>"; };
+		DAA9D5AE2670B60700A6A086 /* ButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonsView.swift; sourceTree = "<group>"; };
 		DAB5E521266F87C100016458 /* labs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = labs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAB5E524266F87C100016458 /* labsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = labsApp.swift; sourceTree = "<group>"; };
 		DAB5E528266F87C200016458 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -133,6 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				DAA9D5AC2670B08900A6A086 /* MaterialView.swift */,
+				DAA9D5AE2670B60700A6A086 /* ButtonsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -392,6 +395,7 @@
 				DAB5E560266F87F100016458 /* CoffeeMenuView.swift in Sources */,
 				DAB5E56E266F8BB500016458 /* RefreshableCoffeeMenuViewModel.swift in Sources */,
 				DAB5E565266F880700016458 /* Coffee.swift in Sources */,
+				DAA9D5AF2670B60700A6A086 /* ButtonsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
