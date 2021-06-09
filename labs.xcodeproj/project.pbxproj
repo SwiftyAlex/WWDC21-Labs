@@ -10,6 +10,7 @@
 		DA23AFE1266FAD3A009689F3 /* AccountForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA23AFE0266FAD3A009689F3 /* AccountForm.swift */; };
 		DA23AFE7266FB594009689F3 /* ActionableCoffeeMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA23AFE6266FB594009689F3 /* ActionableCoffeeMenu.swift */; };
 		DA23AFE9266FB5A2009689F3 /* ActionableCoffeeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA23AFE8266FB5A2009689F3 /* ActionableCoffeeViewModel.swift */; };
+		DAA9D5AD2670B08900A6A086 /* MaterialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA9D5AC2670B08900A6A086 /* MaterialView.swift */; };
 		DAB5E525266F87C100016458 /* labsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB5E524266F87C100016458 /* labsApp.swift */; };
 		DAB5E529266F87C200016458 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAB5E528266F87C200016458 /* Assets.xcassets */; };
 		DAB5E52C266F87C200016458 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAB5E52B266F87C200016458 /* Preview Assets.xcassets */; };
@@ -51,6 +52,7 @@
 		DA23AFE0266FAD3A009689F3 /* AccountForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountForm.swift; sourceTree = "<group>"; };
 		DA23AFE6266FB594009689F3 /* ActionableCoffeeMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionableCoffeeMenu.swift; sourceTree = "<group>"; };
 		DA23AFE8266FB5A2009689F3 /* ActionableCoffeeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionableCoffeeViewModel.swift; sourceTree = "<group>"; };
+		DAA9D5AC2670B08900A6A086 /* MaterialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialView.swift; sourceTree = "<group>"; };
 		DAB5E521266F87C100016458 /* labs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = labs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAB5E524266F87C100016458 /* labsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = labsApp.swift; sourceTree = "<group>"; };
 		DAB5E528266F87C200016458 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -127,6 +129,14 @@
 			path = "Actionable Coffee Menu";
 			sourceTree = "<group>";
 		};
+		DAA9D5AB2670B07D00A6A086 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DAA9D5AC2670B08900A6A086 /* MaterialView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		DAB5E518266F87C100016458 = {
 			isa = PBXGroup;
 			children = (
@@ -189,6 +199,7 @@
 		DAB5E559266F87D800016458 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				DAA9D5AB2670B07D00A6A086 /* Views */,
 				DA23AFE3266FB529009689F3 /* Lists */,
 				DA23AFDF266FAD33009689F3 /* Account Form */,
 			);
@@ -366,6 +377,7 @@
 				DAB5E574266F8D3C00016458 /* FancyCoffeeMenuViewModel.swift in Sources */,
 				DAB5E561266F87F100016458 /* CoffeeMenuViewModel.swift in Sources */,
 				DAB5E52E266F87C200016458 /* Persistence.swift in Sources */,
+				DAA9D5AD2670B08900A6A086 /* MaterialView.swift in Sources */,
 				DAB5E56C266F8BA400016458 /* RefreshableCoffeeMenu.swift in Sources */,
 				DA23AFE7266FB594009689F3 /* ActionableCoffeeMenu.swift in Sources */,
 				DA23AFE9266FB5A2009689F3 /* ActionableCoffeeViewModel.swift in Sources */,

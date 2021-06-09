@@ -25,7 +25,7 @@ struct FancyCoffeeMenuItemView: View {
 
             VStack {
                 Text(coffee.name)
-                    .foregroundColor(.white)
+                    .foregroundStyle(.primary)
                     .font(.headline)
                     .padding()
             }
